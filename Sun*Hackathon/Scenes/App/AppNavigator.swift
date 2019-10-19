@@ -14,6 +14,9 @@ struct AppNavigator: AppNavigatorType {
     unowned let window: UIWindow
     
     func toMainTabBar() {
+        let tabBarController = MainTabBarController.instantiate()
+        let navigationController = UINavigationController(rootViewController: tabBarController)
+        
         let homeController = HomeController.instantiate().then {
             $0.tabBarItem = UITabBarItem(title: "Trang chủ", image: #imageLiteral(resourceName: "home"), tag: 0)
         }
@@ -21,18 +24,20 @@ struct AppNavigator: AppNavigatorType {
             $0.tabBarItem = UITabBarItem(title: "Thu gom", image: #imageLiteral(resourceName: "location"), tag: 1)
         }
         let cameraController = CameraController.instantiate().then {
+            $0.bindViewModel(to:
+                CameraViewModel(useCase: CameraUseCase(detectRepo: DetectTrashRepository()),
+                                navigator: CameraNavigator(navigation: navigationController)))
             $0.tabBarItem = UITabBarItem(title: "Giao dịch", image: #imageLiteral(resourceName: "camera"), tag: 2)
         }
         let historyController = HistoryController.instantiate().then {
             $0.tabBarItem = UITabBarItem(title: "Phân loại", image: #imageLiteral(resourceName: "historyIcon"), tag: 3)
         }
-        let profileController = HistoryController.instantiate().then {
+        let profileController = ProfileController.instantiate().then {
             $0.tabBarItem = UITabBarItem(title: "Tài khoản", image: #imageLiteral(resourceName: "profile"), tag: 4)
         }
-        let tabBarController = MainTabBarController.instantiate()
+
         tabBarController.viewControllers = [homeController, locationController, cameraController, historyController, profileController]
         tabBarController.tabBar.tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-        let navigationController = UINavigationController(rootViewController: tabBarController)
         window.rootViewController = navigationController
     }
 }
