@@ -52,12 +52,18 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-Ci-nvH">
+                                                <rect key="frame" x="0.0" y="178.66666666666669" width="375" height="621.33333333333326"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.46711355449999997" green="0.78369158510000003" blue="0.5254516602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="ucE-8q-0Pj" firstAttribute="top" secondItem="BMX-uO-JaK" secondAttribute="bottom" constant="7" id="2AS-qk-YKu"/>
                                             <constraint firstItem="BMX-uO-JaK" firstAttribute="centerY" secondItem="vQa-fx-9Ja" secondAttribute="centerY" multiplier="0.82" id="3bD-0e-Pgg"/>
+                                            <constraint firstItem="Fgh-Ci-nvH" firstAttribute="leading" secondItem="TyQ-GN-Qaj" secondAttribute="leading" id="9Xo-BO-hZP"/>
                                             <constraint firstItem="Zys-sa-g8U" firstAttribute="leading" secondItem="TyQ-GN-Qaj" secondAttribute="leading" constant="-33" id="AgM-eP-N2Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fgh-Ci-nvH" secondAttribute="bottom" id="BCv-sF-wUt"/>
                                             <constraint firstItem="K5q-Tp-ydc" firstAttribute="top" secondItem="TyQ-GN-Qaj" secondAttribute="top" constant="23" id="FBO-SQ-fur"/>
                                             <constraint firstAttribute="trailing" secondItem="Zys-sa-g8U" secondAttribute="trailing" constant="-33" id="FwP-Fv-92b"/>
                                             <constraint firstItem="vQa-fx-9Ja" firstAttribute="leading" secondItem="TyQ-GN-Qaj" secondAttribute="leading" constant="21" id="HBn-gv-sjH"/>
@@ -65,9 +71,11 @@
                                             <constraint firstItem="K5q-Tp-ydc" firstAttribute="centerX" secondItem="Zys-sa-g8U" secondAttribute="centerX" id="Tbz-HX-PYY"/>
                                             <constraint firstItem="BMX-uO-JaK" firstAttribute="leading" secondItem="vQa-fx-9Ja" secondAttribute="trailing" constant="15" id="Tkt-Oy-yiL"/>
                                             <constraint firstItem="Zys-sa-g8U" firstAttribute="top" secondItem="TyQ-GN-Qaj" secondAttribute="top" constant="-44" id="VYx-nr-PUO"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fgh-Ci-nvH" secondAttribute="trailing" id="WMm-lO-vmv"/>
                                             <constraint firstAttribute="bottom" secondItem="Zys-sa-g8U" secondAttribute="bottom" id="ZYS-mQ-YFv"/>
                                             <constraint firstItem="vQa-fx-9Ja" firstAttribute="centerY" secondItem="Zys-sa-g8U" secondAttribute="centerY" multiplier="0.34" id="a5s-3r-ZQr"/>
                                             <constraint firstItem="ucE-8q-0Pj" firstAttribute="leading" secondItem="BMX-uO-JaK" secondAttribute="leading" id="hOL-bM-q6t"/>
+                                            <constraint firstItem="Fgh-Ci-nvH" firstAttribute="top" secondItem="vQa-fx-9Ja" secondAttribute="bottom" id="iYK-mF-dNN"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -92,6 +100,7 @@
                     <size key="freeformSize" width="375" height="840"/>
                     <connections>
                         <outlet property="avatarImageView" destination="vQa-fx-9Ja" id="cb2-il-CTk"/>
+                        <outlet property="tableView" destination="Fgh-Ci-nvH" id="M2n-Op-vEe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icY-7b-TqY" userLabel="First Responder" sceneMemberID="firstResponder"/>

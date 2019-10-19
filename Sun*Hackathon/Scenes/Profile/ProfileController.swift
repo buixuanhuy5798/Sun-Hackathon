@@ -6,12 +6,39 @@
 //  Copyright © 2019 huy. All rights reserved.
 //
 
-class ProfileController: UIViewController {
-    
+class ProfileController: UIViewController, BindableType {
+
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var avatarImageView: UIImageView!
+    
+    var viewModel: ProfileViewModel!
     
     override func viewDidLayoutSubviews() {
         avatarImageView.toRoundImage()
+    }
+    
+    override func viewDidLoad() {
+        config()
+    }
+    
+    func config() {
+        tableView.do {
+            $0.register(cellType: InfoAccountCell.self)
+            $0.rowHeight = view.height / 7
+        }
+    }
+    
+    func bindViewModel() {
+        let input = ProfileViewModel.Input(inputTrigger: Driver.just(()))
+        let output = viewModel.transform(input)
+        output.infomation
+            .drive(tableView.rx.items) { tableview, index, text in
+                let indexPath = IndexPath(item: index, section: 0)
+                let cell: InfoAccountCell = self.tableView.dequeueReusableCell(for: indexPath)
+                cell.setUpContentCell(icon: "profile", info: text)
+                return cell
+            }
+            .disposed(by: rx.disposeBag)
     }
 }
 
