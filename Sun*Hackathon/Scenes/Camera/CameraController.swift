@@ -23,15 +23,20 @@ final class CameraController: UIViewController, BindableType {
         super.viewDidLoad()
         config()
     }
+    @IBAction func closeButtonHandle(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
     
     func bindViewModel() {
         let input = CameraViewModel.Input(detectTrigger: detectImagePush.asDriverOnErrorJustComplete())
         let output = viewModel.transform(input)
-        output.ditected.drive().disposed(by: rx.disposeBag)
+        output.ditected
+            .drive()
+            .disposed(by: rx.disposeBag)
     }
     
     func config() {
-        cameraManager.addPreviewLayerToView(cameraView)
+        _ = cameraManager.addPreviewLayerToView(cameraView)
         cameraManager.cameraOutputQuality = .medium
         snapPhotoButton.rx.tap.asDriver()
             .drive(onNext: { _ in
