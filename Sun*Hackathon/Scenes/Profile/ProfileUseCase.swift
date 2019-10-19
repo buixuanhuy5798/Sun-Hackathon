@@ -30,7 +30,7 @@ struct ProfileUseCase: ProfileUseCaseType {
     let fakeInfo = Infomation()
     func getInfomationProfile() -> Observable<[String]> {
         return Observable.create({ observable -> Disposable in
-            observable.onNext([self.fakeInfo.name, self.fakeInfo.adress, self.fakeInfo.point, self.fakeInfo.phoneNumber])
+            observable.onNext([self.fakeInfo.adress,self.fakeInfo.phoneNumber, "Cài đặt"])
             observable.onCompleted()
             return Disposables.create {
                 observable.onCompleted()

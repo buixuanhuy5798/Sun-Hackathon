@@ -24,7 +24,7 @@ class ProfileController: UIViewController, BindableType {
     func config() {
         tableView.do {
             $0.register(cellType: InfoAccountCell.self)
-            $0.rowHeight = view.height / 7
+            $0.rowHeight = view.height / 9.5
         }
     }
     
@@ -35,7 +35,13 @@ class ProfileController: UIViewController, BindableType {
             .drive(tableView.rx.items) { tableview, index, text in
                 let indexPath = IndexPath(item: index, section: 0)
                 let cell: InfoAccountCell = self.tableView.dequeueReusableCell(for: indexPath)
-                cell.setUpContentCell(icon: "profile", info: text)
+                switch indexPath.row {
+                case 0:
+                    cell.setUpContentCell(icon: "phone", info: text)
+                default:
+                    cell.setUpContentCell(icon: "address", info: text)
+                }
+                
                 return cell
             }
             .disposed(by: rx.disposeBag)

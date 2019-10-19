@@ -20,14 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KI-Cx-JDD" customClass="RoundedView" customModule="Sun_Hackathon" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="5" width="60" height="116.5"/>
+                        <rect key="frame" x="0.0" y="5" width="65" height="116.5"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="2Ki-Ms-mZO">
-                                <rect key="frame" x="12" y="43.5" width="30" height="30"/>
+                                <rect key="frame" x="11" y="40" width="37" height="37"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="MqG-Vg-XK5"/>
-                                    <constraint firstAttribute="height" constant="30" id="nbk-Xr-jv4"/>
+                                    <constraint firstAttribute="width" constant="37" id="MqG-Vg-XK5"/>
+                                    <constraint firstAttribute="height" constant="37" id="nbk-Xr-jv4"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -35,7 +35,7 @@
                         <constraints>
                             <constraint firstItem="2Ki-Ms-mZO" firstAttribute="centerY" secondItem="6KI-Cx-JDD" secondAttribute="centerY" id="GFx-X8-sAO"/>
                             <constraint firstItem="2Ki-Ms-mZO" firstAttribute="centerX" secondItem="6KI-Cx-JDD" secondAttribute="centerX" multiplier="0.9" id="S3G-aj-3KU"/>
-                            <constraint firstAttribute="width" constant="60" id="ceH-av-4SN"/>
+                            <constraint firstAttribute="width" constant="65" id="ceH-av-4SN"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
@@ -44,16 +44,16 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="cornerBottomRight" value="YES"/>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="cornerTopRight" value="YES"/>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="17"/>
+                                <real key="value" value="14"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="cornerTopLeft" value="NO"/>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="cornerBottomLeft" value="NO"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bùi Xuân HUy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMw-3F-BFq">
-                        <rect key="frame" x="75" y="53" width="105.5" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="80" y="53.5" width="106" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>

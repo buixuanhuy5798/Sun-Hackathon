@@ -68,6 +68,8 @@
 		0577CF0E235AFD2500B5C13A /* DetectTrashRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF0D235AFD2500B5C13A /* DetectTrashRepository.swift */; };
 		0577CF10235AFDCB00B5C13A /* API+DetectTrash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF0F235AFDCB00B5C13A /* API+DetectTrash.swift */; };
 		0577CF12235B00C600B5C13A /* API+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF11235B00C600B5C13A /* API+Server.swift */; };
+		0577CF16235B355600B5C13A /* AdvertiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF14235B355600B5C13A /* AdvertiseCell.swift */; };
+		0577CF17235B355600B5C13A /* AdvertiseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0577CF15235B355600B5C13A /* AdvertiseCell.xib */; };
 		101D49D04607516CAFB010F1 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CBF9BCEBC3512CC37217F3 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework */; };
 		3F4CAF50B5B9E1971C43582C /* Pods_Sun_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66924AD459A266F3E36C317 /* Pods_Sun_HackathonTests.framework */; };
 		F11E5B11406F8999CCD7255B /* Pods_Sun_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F840E1A2D96A50E90F2C200 /* Pods_Sun_Hackathon.framework */; };
@@ -159,6 +161,8 @@
 		0577CF0D235AFD2500B5C13A /* DetectTrashRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTrashRepository.swift; sourceTree = "<group>"; };
 		0577CF0F235AFDCB00B5C13A /* API+DetectTrash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+DetectTrash.swift"; sourceTree = "<group>"; };
 		0577CF11235B00C600B5C13A /* API+Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Server.swift"; sourceTree = "<group>"; };
+		0577CF14235B355600B5C13A /* AdvertiseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseCell.swift; sourceTree = "<group>"; };
+		0577CF15235B355600B5C13A /* AdvertiseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertiseCell.xib; sourceTree = "<group>"; };
 		060011F83D9548D133254288 /* Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig"; path = "Target Support Files/Pods-Sun*Hackathon-Sun*HackathonUITests/Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		14CBF9BCEBC3512CC37217F3 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sun_Hackathon_Sun_HackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		215D60D8D97B641A6337C43D /* Pods-Sun*Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sun*Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Sun*Hackathon/Pods-Sun*Hackathon.release.xcconfig"; sourceTree = "<group>"; };
@@ -392,6 +396,7 @@
 		053FFC59235A9664007A6334 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0577CF13235B34EC00B5C13A /* Cells */,
 				053FFC7E235A97B0007A6334 /* HomeController.swift */,
 				053FFC80235A97B9007A6334 /* HomeViewModel.swift */,
 				053FFC82235A97C2007A6334 /* HomeNavigator.swift */,
@@ -496,6 +501,15 @@
 				0577CF05235AF5B900B5C13A /* TypeTrash.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0577CF13235B34EC00B5C13A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0577CF14235B355600B5C13A /* AdvertiseCell.swift */,
+				0577CF15235B355600B5C13A /* AdvertiseCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		ABE74E00AD23AF150D54C977 /* Pods */ = {
@@ -635,6 +649,7 @@
 				053FFC08235A601B007A6334 /* LaunchScreen.storyboard in Resources */,
 				053FFC58235A965D007A6334 /* History.storyboard in Resources */,
 				053FFC05235A601B007A6334 /* Assets.xcassets in Resources */,
+				0577CF17235B355600B5C13A /* AdvertiseCell.xib in Resources */,
 				053FFC9F235AE653007A6334 /* InfoAccountCell.xib in Resources */,
 				053FFC03235A6019007A6334 /* MainTabBar.storyboard in Resources */,
 				053FFC56235A964C007A6334 /* Profile.storyboard in Resources */,
@@ -814,6 +829,7 @@
 				053FFC65235A96C9007A6334 /* HistoryUseCase.swift in Sources */,
 				053FFC7B235A9799007A6334 /* LocationNavigator.swift in Sources */,
 				053FFBFE235A6019007A6334 /* AppDelegate.swift in Sources */,
+				0577CF16235B355600B5C13A /* AdvertiseCell.swift in Sources */,
 				0577CF08235AF5F700B5C13A /* BaseModel.swift in Sources */,
 				053FFC89235A9A74007A6334 /* Urls.swift in Sources */,
 			);
