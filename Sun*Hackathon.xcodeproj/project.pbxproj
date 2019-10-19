@@ -52,7 +52,6 @@
 		053FFC90235A9AB5007A6334 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FFC8E235A9AB5007A6334 /* RoundedButton.swift */; };
 		053FFC92235A9BA7007A6334 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FFC91235A9BA7007A6334 /* UIView+.swift */; };
 		053FFC94235A9CA7007A6334 /* RoundedUIIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FFC93235A9CA7007A6334 /* RoundedUIIImageView.swift */; };
-		053FFC96235A9D28007A6334 /* Ảnh chụp Màn hình 2019-10-19 lúc 04.00.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 053FFC95235A9D28007A6334 /* Ảnh chụp Màn hình 2019-10-19 lúc 04.00.45.png */; };
 		053FFC98235A9F67007A6334 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FFC97235A9F67007A6334 /* ShadowView.swift */; };
 		101D49D04607516CAFB010F1 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CBF9BCEBC3512CC37217F3 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework */; };
 		3F4CAF50B5B9E1971C43582C /* Pods_Sun_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66924AD459A266F3E36C317 /* Pods_Sun_HackathonTests.framework */; };
@@ -129,7 +128,6 @@
 		053FFC8E235A9AB5007A6334 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		053FFC91235A9BA7007A6334 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		053FFC93235A9CA7007A6334 /* RoundedUIIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIIImageView.swift; sourceTree = "<group>"; };
-		053FFC95235A9D28007A6334 /* Ảnh chụp Màn hình 2019-10-19 lúc 04.00.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ảnh chụp Màn hình 2019-10-19 lúc 04.00.45.png"; sourceTree = "<group>"; };
 		053FFC97235A9F67007A6334 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		060011F83D9548D133254288 /* Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig"; path = "Target Support Files/Pods-Sun*Hackathon-Sun*HackathonUITests/Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		14CBF9BCEBC3512CC37217F3 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sun_Hackathon_Sun_HackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,7 +202,6 @@
 				053FFC31235A90C8007A6334 /* Utlis */,
 				053FFBFD235A6019007A6334 /* AppDelegate.swift */,
 				053FFC04235A601B007A6334 /* Assets.xcassets */,
-				053FFC95235A9D28007A6334 /* Ảnh chụp Màn hình 2019-10-19 lúc 04.00.45.png */,
 				053FFC09235A601B007A6334 /* Info.plist */,
 			);
 			path = "Sun*Hackathon";
@@ -567,7 +564,6 @@
 				053FFC51235A9623007A6334 /* Location.storyboard in Resources */,
 				053FFC53235A9636007A6334 /* Camera.storyboard in Resources */,
 				053FFC08235A601B007A6334 /* LaunchScreen.storyboard in Resources */,
-				053FFC96235A9D28007A6334 /* Ảnh chụp Màn hình 2019-10-19 lúc 04.00.45.png in Resources */,
 				053FFC58235A965D007A6334 /* History.storyboard in Resources */,
 				053FFC05235A601B007A6334 /* Assets.xcassets in Resources */,
 				053FFC03235A6019007A6334 /* MainTabBar.storyboard in Resources */,
