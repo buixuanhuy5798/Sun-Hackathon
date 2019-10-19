@@ -6,4 +6,8 @@
 //  Copyright © 2019 huy. All rights reserved.
 //
 
-import Foundation
+protocol HomeNavigatorType {
+}
+
+struct HomeNavigator: HomeNavigatorType {
+}

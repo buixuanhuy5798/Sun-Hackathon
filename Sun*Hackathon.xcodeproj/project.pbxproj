@@ -70,6 +70,12 @@
 		0577CF12235B00C600B5C13A /* API+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF11235B00C600B5C13A /* API+Server.swift */; };
 		0577CF16235B355600B5C13A /* AdvertiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF14235B355600B5C13A /* AdvertiseCell.swift */; };
 		0577CF17235B355600B5C13A /* AdvertiseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0577CF15235B355600B5C13A /* AdvertiseCell.xib */; };
+		0577CF19235B8B7100B5C13A /* VoucherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF18235B8B7100B5C13A /* VoucherModel.swift */; };
+		0577CF1B235B8C4A00B5C13A /* VoucherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF1A235B8C4A00B5C13A /* VoucherRequest.swift */; };
+		0577CF1D235B8CD300B5C13A /* VoucherReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF1C235B8CD300B5C13A /* VoucherReponse.swift */; };
+		0577CF1F235B8F5500B5C13A /* ViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF1E235B8F5500B5C13A /* ViewController+Rx.swift */; };
+		0577CF21235BC45900B5C13A /* VoucherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF20235BC45900B5C13A /* VoucherRepository.swift */; };
+		0577CF23235BC9DB00B5C13A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577CF22235BC9DB00B5C13A /* UIViewController+.swift */; };
 		101D49D04607516CAFB010F1 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CBF9BCEBC3512CC37217F3 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework */; };
 		3F4CAF50B5B9E1971C43582C /* Pods_Sun_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66924AD459A266F3E36C317 /* Pods_Sun_HackathonTests.framework */; };
 		F11E5B11406F8999CCD7255B /* Pods_Sun_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F840E1A2D96A50E90F2C200 /* Pods_Sun_Hackathon.framework */; };
@@ -163,6 +169,12 @@
 		0577CF11235B00C600B5C13A /* API+Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Server.swift"; sourceTree = "<group>"; };
 		0577CF14235B355600B5C13A /* AdvertiseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseCell.swift; sourceTree = "<group>"; };
 		0577CF15235B355600B5C13A /* AdvertiseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertiseCell.xib; sourceTree = "<group>"; };
+		0577CF18235B8B7100B5C13A /* VoucherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherModel.swift; sourceTree = "<group>"; };
+		0577CF1A235B8C4A00B5C13A /* VoucherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherRequest.swift; sourceTree = "<group>"; };
+		0577CF1C235B8CD300B5C13A /* VoucherReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherReponse.swift; sourceTree = "<group>"; };
+		0577CF1E235B8F5500B5C13A /* ViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Rx.swift"; sourceTree = "<group>"; };
+		0577CF20235BC45900B5C13A /* VoucherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherRepository.swift; sourceTree = "<group>"; };
+		0577CF22235BC9DB00B5C13A /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		060011F83D9548D133254288 /* Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig"; path = "Target Support Files/Pods-Sun*Hackathon-Sun*HackathonUITests/Pods-Sun*Hackathon-Sun*HackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		14CBF9BCEBC3512CC37217F3 /* Pods_Sun_Hackathon_Sun_HackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sun_Hackathon_Sun_HackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		215D60D8D97B641A6337C43D /* Pods-Sun*Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sun*Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Sun*Hackathon/Pods-Sun*Hackathon.release.xcconfig"; sourceTree = "<group>"; };
@@ -274,6 +286,8 @@
 			children = (
 				053FFC91235A9BA7007A6334 /* UIView+.swift */,
 				053FFC99235AE1DA007A6334 /* UIImageView+.swift */,
+				0577CF1E235B8F5500B5C13A /* ViewController+Rx.swift */,
+				0577CF22235BC9DB00B5C13A /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -313,6 +327,7 @@
 			children = (
 				0577CEFD235AEF6200B5C13A /* BaseRequest.swift */,
 				0577CF01235AF09F00B5C13A /* CustomRequestAdapter.swift */,
+				0577CF1A235B8C4A00B5C13A /* VoucherRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -321,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				0577CF09235AF6B500B5C13A /* ReponseTypeTrash.swift */,
+				0577CF1C235B8CD300B5C13A /* VoucherReponse.swift */,
 			);
 			path = Reponse;
 			sourceTree = "<group>";
@@ -339,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				0577CF0D235AFD2500B5C13A /* DetectTrashRepository.swift */,
+				0577CF20235BC45900B5C13A /* VoucherRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -499,6 +516,7 @@
 			children = (
 				0577CF07235AF5F700B5C13A /* BaseModel.swift */,
 				0577CF05235AF5B900B5C13A /* TypeTrash.swift */,
+				0577CF18235B8B7100B5C13A /* VoucherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -786,15 +804,19 @@
 				0577CF06235AF5B900B5C13A /* TypeTrash.swift in Sources */,
 				053FFC9A235AE1DA007A6334 /* UIImageView+.swift in Sources */,
 				053FFC98235A9F67007A6334 /* ShadowView.swift in Sources */,
+				0577CF1B235B8C4A00B5C13A /* VoucherRequest.swift in Sources */,
 				053FFC6F235A9743007A6334 /* CameraController.swift in Sources */,
 				053FFC71235A974C007A6334 /* CameraViewModel.swift in Sources */,
 				053FFC85235A97CD007A6334 /* HomeUseCase.swift in Sources */,
 				053FFC5F235A96A7007A6334 /* HistoryController.swift in Sources */,
+				0577CF1F235B8F5500B5C13A /* ViewController+Rx.swift in Sources */,
 				053FFC94235A9CA7007A6334 /* RoundedUIIImageView.swift in Sources */,
 				053FFC4B235A9424007A6334 /* MainTabBarNavigator.swift in Sources */,
 				053FFC87235A9A69007A6334 /* Constants.swift in Sources */,
 				0577CF10235AFDCB00B5C13A /* API+DetectTrash.swift in Sources */,
 				053FFC9E235AE653007A6334 /* InfoAccountCell.swift in Sources */,
+				0577CF19235B8B7100B5C13A /* VoucherModel.swift in Sources */,
+				0577CF23235BC9DB00B5C13A /* UIViewController+.swift in Sources */,
 				053FFC63235A96BE007A6334 /* HistoryNavigator.swift in Sources */,
 				053FFC61235A96B3007A6334 /* HistoryViewModel.swift in Sources */,
 				053FFC7F235A97B0007A6334 /* HomeController.swift in Sources */,
@@ -816,6 +838,7 @@
 				053FFC49235A9419007A6334 /* MainTabBarViewModel.swift in Sources */,
 				053FFC79235A978E007A6334 /* LocationViewModel.swift in Sources */,
 				0577CEFE235AEF6200B5C13A /* BaseRequest.swift in Sources */,
+				0577CF21235BC45900B5C13A /* VoucherRepository.swift in Sources */,
 				053FFC8F235A9AB5007A6334 /* RoundedView.swift in Sources */,
 				0577CF0A235AF6B500B5C13A /* ReponseTypeTrash.swift in Sources */,
 				0577CF12235B00C600B5C13A /* API+Server.swift in Sources */,
@@ -826,6 +849,7 @@
 				053FFC6B235A96EF007A6334 /* ProfileNavigator.swift in Sources */,
 				053FFC90235A9AB5007A6334 /* RoundedButton.swift in Sources */,
 				0577CEFA235AEF5900B5C13A /* BaseError.swift in Sources */,
+				0577CF1D235B8CD300B5C13A /* VoucherReponse.swift in Sources */,
 				053FFC65235A96C9007A6334 /* HistoryUseCase.swift in Sources */,
 				053FFC7B235A9799007A6334 /* LocationNavigator.swift in Sources */,
 				053FFBFE235A6019007A6334 /* AppDelegate.swift in Sources */,

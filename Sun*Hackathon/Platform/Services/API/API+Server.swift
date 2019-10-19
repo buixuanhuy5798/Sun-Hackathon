@@ -12,5 +12,6 @@ extension APIService {
     enum Url {
         static private let baseUrl = "http://10.0.3.242:3000/"
         static let detectUrl = baseUrl + "uploadpic"
+        static let voucherUrl = baseUrl + "vouchers"
     }
 }

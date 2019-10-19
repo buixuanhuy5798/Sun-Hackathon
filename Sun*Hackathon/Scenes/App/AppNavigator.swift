@@ -18,6 +18,8 @@ struct AppNavigator: AppNavigatorType {
         let navigationController = UINavigationController(rootViewController: tabBarController)
         
         let homeController = HomeController.instantiate().then {
+            $0.bindViewModel(to: HomeViewModel(navigator: HomeNavigator(),
+                                               useCase: HomeUseCase()))
             $0.tabBarItem = UITabBarItem(title: "Trang chủ", image: #imageLiteral(resourceName: "home"), tag: 0)
         }
         let locationController = LocationController.instantiate().then {

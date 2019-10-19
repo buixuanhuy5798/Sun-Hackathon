@@ -202,18 +202,67 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerBottomRight" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phalaro Vouchers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-BZ-5lY">
+                                                <rect key="frame" x="12" y="384" width="150.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phalaro News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNP-cL-QKI">
+                                                <rect key="frame" x="12" y="188" width="119.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trao-luu-song-xanh-ban-da-hieu-dung-va-du_3-min" translatesAutoresizingMaskIntoConstraints="NO" id="5bo-0p-Bdz">
+                                                <rect key="frame" x="3" y="219" width="369" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="D1Q-aS-7ly"/>
+                                                </constraints>
+                                            </imageView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SDL-pU-68e">
+                                                <rect key="frame" x="0.0" y="415" width="375" height="200"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jy2-M9-aM0">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="d6I-u6-x5C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="5bo-0p-Bdz" secondAttribute="trailing" constant="3" id="2dh-LL-9z2"/>
+                                            <constraint firstItem="cNP-cL-QKI" firstAttribute="centerY" secondItem="ead-M3-xPN" secondAttribute="centerY" multiplier="0.4" id="40J-Kq-XLN"/>
+                                            <constraint firstItem="4Lk-BZ-5lY" firstAttribute="top" secondItem="5bo-0p-Bdz" secondAttribute="bottom" constant="15" id="4PU-Vd-rjc"/>
+                                            <constraint firstItem="SDL-pU-68e" firstAttribute="centerX" secondItem="ead-M3-xPN" secondAttribute="centerX" id="5bm-dz-P3g"/>
+                                            <constraint firstItem="5bo-0p-Bdz" firstAttribute="leading" secondItem="ead-M3-xPN" secondAttribute="leading" constant="3" id="DLU-uK-Gcc"/>
+                                            <constraint firstItem="4Lk-BZ-5lY" firstAttribute="leading" secondItem="ead-M3-xPN" secondAttribute="leading" constant="12" id="FG8-Nw-uB3"/>
                                             <constraint firstItem="WFf-Uc-Vg0" firstAttribute="leading" secondItem="3mw-Nx-zf9" secondAttribute="trailing" constant="3" id="I0K-Pb-LXm"/>
                                             <constraint firstItem="2Y4-CS-rye" firstAttribute="leading" secondItem="3mw-Nx-zf9" secondAttribute="leading" id="Wge-do-Ogm"/>
                                             <constraint firstItem="2Y4-CS-rye" firstAttribute="top" secondItem="WFf-Uc-Vg0" secondAttribute="bottom" constant="7" id="YEO-qN-d6B"/>
                                             <constraint firstAttribute="trailing" secondItem="2Y4-CS-rye" secondAttribute="trailing" constant="17" id="YmI-jX-lX0"/>
+                                            <constraint firstItem="SDL-pU-68e" firstAttribute="height" secondItem="ead-M3-xPN" secondAttribute="height" multiplier="1/5" id="dbL-KL-dFH"/>
                                             <constraint firstItem="3mw-Nx-zf9" firstAttribute="leading" secondItem="ead-M3-xPN" secondAttribute="leading" constant="17" id="eyQ-4i-PsH"/>
                                             <constraint firstItem="3mw-Nx-zf9" firstAttribute="top" secondItem="ead-M3-xPN" secondAttribute="top" constant="30" id="gUP-O7-88f"/>
+                                            <constraint firstItem="5bo-0p-Bdz" firstAttribute="top" secondItem="cNP-cL-QKI" secondAttribute="bottom" constant="7" id="iZW-Qn-g69"/>
                                             <constraint firstAttribute="height" constant="1000" id="ivi-64-JjD"/>
                                             <constraint firstAttribute="trailing" secondItem="USp-rO-vLK" secondAttribute="trailing" id="mij-cj-sgY"/>
                                             <constraint firstItem="USp-rO-vLK" firstAttribute="top" secondItem="ead-M3-xPN" secondAttribute="top" constant="-45" id="muQ-kq-gxa"/>
+                                            <constraint firstItem="SDL-pU-68e" firstAttribute="top" secondItem="4Lk-BZ-5lY" secondAttribute="bottom" constant="7" id="owH-ph-dgp"/>
+                                            <constraint firstItem="SDL-pU-68e" firstAttribute="width" secondItem="ead-M3-xPN" secondAttribute="width" id="sJe-fb-sVa"/>
+                                            <constraint firstItem="cNP-cL-QKI" firstAttribute="leading" secondItem="ead-M3-xPN" secondAttribute="leading" constant="12" id="se2-u3-1NV"/>
                                             <constraint firstItem="WFf-Uc-Vg0" firstAttribute="firstBaseline" secondItem="3mw-Nx-zf9" secondAttribute="firstBaseline" id="yYB-qI-ywY"/>
                                             <constraint firstItem="USp-rO-vLK" firstAttribute="leading" secondItem="ead-M3-xPN" secondAttribute="leading" id="yw7-oT-TCa"/>
                                         </constraints>
@@ -238,10 +287,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fb5-cx-Xeb"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="SDL-pU-68e" id="f6N-WD-Khp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgq-10-5s5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.623188405797109" y="88.392857142857139"/>
+            <point key="canvasLocation" x="53.600000000000001" y="87.706146926536732"/>
         </scene>
     </scenes>
     <resources>
@@ -250,5 +302,6 @@
         <image name="image (3)" width="1244" height="928"/>
         <image name="newOrder" width="64" height="64"/>
         <image name="rPoint" width="40" height="40"/>
+        <image name="trao-luu-song-xanh-ban-da-hieu-dung-va-du_3-min" width="800" height="500"/>
     </resources>
 </document>

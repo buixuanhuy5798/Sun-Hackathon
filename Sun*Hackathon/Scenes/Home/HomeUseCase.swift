@@ -6,4 +6,14 @@
 //  Copyright © 2019 huy. All rights reserved.
 //
 
+protocol HomeUseCaseType {
+    func getVouchers() -> Observable<[VoucherModel]>
+}
 
+struct HomeUseCase: HomeUseCaseType {
+    func getVouchers() -> Observable<[VoucherModel]> {
+        let request = VoucherRequest()
+        let repository = VoucherRepository()
+        return repository.getVouchers(input: request)
+    }
+}

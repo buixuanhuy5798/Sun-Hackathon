@@ -22,44 +22,35 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y01-bk-9TC" customClass="ShadowView" customModule="Sun_Hackathon" customModuleProvider="target">
                         <rect key="frame" x="2" y="2" width="245" height="197"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yTH-Ai-Wil">
-                                <rect key="frame" x="0.0" y="0.0" width="245" height="115"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="v1d-7G-iuZ"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rPoint" translatesAutoresizingMaskIntoConstraints="NO" id="iIn-Md-xa0">
-                                <rect key="frame" x="11" y="95" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="2Ok-cD-PLH"/>
-                                    <constraint firstAttribute="width" constant="40" id="sdH-hz-CSQ"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[HOT DEAL 20/10] QUÀ TINH TẾ" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="L8O-Du-V8D">
-                                <rect key="frame" x="11" y="140" width="223" height="18"/>
+                                <rect key="frame" x="11" y="120" width="223" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010đ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkC-fc-qOL">
-                                <rect key="frame" x="11" y="163" width="42.5" height="17.5"/>
+                                <rect key="frame" x="11" y="143" width="42.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yTH-Ai-Wil">
+                                <rect key="frame" x="0.0" y="0.0" width="245" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="v1d-7G-iuZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="L8O-Du-V8D" firstAttribute="top" secondItem="yTH-Ai-Wil" secondAttribute="bottom" constant="5" id="6gm-fp-zoI"/>
                             <constraint firstItem="DkC-fc-qOL" firstAttribute="top" secondItem="L8O-Du-V8D" secondAttribute="bottom" constant="5" id="9cf-KN-Kta"/>
                             <constraint firstAttribute="trailing" secondItem="yTH-Ai-Wil" secondAttribute="trailing" id="B0M-eV-T95"/>
                             <constraint firstItem="yTH-Ai-Wil" firstAttribute="top" secondItem="y01-bk-9TC" secondAttribute="top" id="BmU-Q5-tHw"/>
                             <constraint firstAttribute="trailing" secondItem="L8O-Du-V8D" secondAttribute="trailing" constant="11" id="Dl4-2H-hpF"/>
-                            <constraint firstItem="L8O-Du-V8D" firstAttribute="top" secondItem="iIn-Md-xa0" secondAttribute="bottom" constant="5" id="DpR-ea-fUl"/>
                             <constraint firstItem="L8O-Du-V8D" firstAttribute="leading" secondItem="y01-bk-9TC" secondAttribute="leading" constant="11" id="KMF-SN-gdH"/>
                             <constraint firstItem="DkC-fc-qOL" firstAttribute="leading" secondItem="y01-bk-9TC" secondAttribute="leading" constant="11" id="Rm2-ty-PSJ"/>
-                            <constraint firstItem="iIn-Md-xa0" firstAttribute="leading" secondItem="y01-bk-9TC" secondAttribute="leading" constant="11" id="bQy-rQ-006"/>
                             <constraint firstItem="yTH-Ai-Wil" firstAttribute="leading" secondItem="y01-bk-9TC" secondAttribute="leading" id="dBD-EY-o3M"/>
-                            <constraint firstItem="iIn-Md-xa0" firstAttribute="top" secondItem="yTH-Ai-Wil" secondAttribute="bottom" constant="-20" id="hsD-8X-dWd"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -86,10 +77,12 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="249" height="201"/>
+            <connections>
+                <outlet property="advertiseImage" destination="yTH-Ai-Wil" id="03W-es-fDx"/>
+                <outlet property="advertiseLabel" destination="L8O-Du-V8D" id="VYg-3Q-spW"/>
+                <outlet property="costLabel" destination="DkC-fc-qOL" id="gnc-Am-38q"/>
+            </connections>
             <point key="canvasLocation" x="281.8840579710145" y="132.25446428571428"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="rPoint" width="40" height="40"/>
-    </resources>
 </document>
