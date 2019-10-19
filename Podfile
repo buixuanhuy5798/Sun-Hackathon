@@ -29,6 +29,7 @@ target 'Sun*Hackathon' do
     #
     pod 'MBProgressHUD'
     pod 'SDWebImage'
+    pod 'CameraManager', '4.0'
 
   target 'Sun*HackathonTests' do
     inherit! :search_paths
