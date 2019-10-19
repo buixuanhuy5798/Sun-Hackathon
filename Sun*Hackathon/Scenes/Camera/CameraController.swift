@@ -19,7 +19,6 @@ final class CameraController: UIViewController, BindableType {
     
     private let detectImagePush = PublishSubject<UIImage>()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
@@ -28,12 +27,12 @@ final class CameraController: UIViewController, BindableType {
     func bindViewModel() {
         let input = CameraViewModel.Input(detectTrigger: detectImagePush.asDriverOnErrorJustComplete())
         let output = viewModel.transform(input)
+        output.ditected.drive().disposed(by: rx.disposeBag)
     }
     
     func config() {
-        cameraManager.addPreviewLayerToView(self.cameraView)
+        cameraManager.addPreviewLayerToView(cameraView)
         cameraManager.cameraOutputQuality = .medium
-        
         snapPhotoButton.rx.tap.asDriver()
             .drive(onNext: { _ in
                 self.cameraManager.capturePictureWithCompletion({ [unowned self] image, err in
