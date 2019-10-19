@@ -13,3 +13,7 @@
 @import Alamofire;
 @import ObjectMapper;
 @import Reusable;
+@import MGArchitecture;
+@import MGAPIService;
+@import MGLoadMore;
+

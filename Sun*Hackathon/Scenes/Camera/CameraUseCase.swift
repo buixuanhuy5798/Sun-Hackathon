@@ -6,4 +6,15 @@
 //  Copyright © 2019 huy. All rights reserved.
 //
 
-import Foundation
+protocol CameraUseCaseType {
+    func detectImage(image: UIImage) -> Observable<[TypeTrash]>
+}
+
+struct CameraUseCase: CameraUseCaseType {
+    
+    let detectRepo: DetectTrashRepositoryType
+    
+    func detectImage(image: UIImage) -> Observable<[TypeTrash]> {
+        return detectRepo.detectTrash(image: image)
+    }
+}
