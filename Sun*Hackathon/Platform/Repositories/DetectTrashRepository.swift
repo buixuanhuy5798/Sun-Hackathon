@@ -34,7 +34,8 @@ struct DetectTrashRepository: DetectTrashRepositoryType {
                                             }
                                             return TypeTrash(JSON: data )
                                         }
-                                        print(a)
+                                        observable.onNext(a)
+                                        observable.onCompleted()
                                     }
                                 default:
                                 break

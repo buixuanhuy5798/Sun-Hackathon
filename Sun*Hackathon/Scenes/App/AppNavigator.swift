@@ -27,12 +27,14 @@ struct AppNavigator: AppNavigatorType {
             $0.bindViewModel(to:
                 CameraViewModel(useCase: CameraUseCase(detectRepo: DetectTrashRepository()),
                                 navigator: CameraNavigator(navigation: navigationController)))
-            $0.tabBarItem = UITabBarItem(title: "Giao dịch", image: #imageLiteral(resourceName: "camera"), tag: 2)
+            $0.tabBarItem = UITabBarItem(title: "Phân loại", image: #imageLiteral(resourceName: "camera"), tag: 2)
         }
         let historyController = HistoryController.instantiate().then {
-            $0.tabBarItem = UITabBarItem(title: "Phân loại", image: #imageLiteral(resourceName: "historyIcon"), tag: 3)
+            $0.tabBarItem = UITabBarItem(title: "Giao dịch", image: #imageLiteral(resourceName: "historyIcon"), tag: 3)
         }
         let profileController = ProfileController.instantiate().then {
+            $0.bindViewModel(to: ProfileViewModel(navigator: ProfileNavigator(),
+                                                  useCase: ProfileUseCase()))
             $0.tabBarItem = UITabBarItem(title: "Tài khoản", image: #imageLiteral(resourceName: "profile"), tag: 4)
         }
 

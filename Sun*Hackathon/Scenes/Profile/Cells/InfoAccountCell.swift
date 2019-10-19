@@ -6,9 +6,16 @@
 //  Copyright © 2019 huy. All rights reserved.
 //
 
-class InfoAccountCell: UITableViewCell {
+class InfoAccountCell: UITableViewCell, NibReusable {
+    @IBOutlet weak var iconCell: UIImageView!
+    @IBOutlet weak var infoLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    func setUpContentCell(icon: String, info: String) {
+        iconCell.image = UIImage(named: icon)
+        infoLabel.text = info
     }
 }
