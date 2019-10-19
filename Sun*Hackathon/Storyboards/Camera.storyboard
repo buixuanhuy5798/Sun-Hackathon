@@ -17,13 +17,53 @@
                     <view key="view" contentMode="scaleToFill" id="XOf-VB-ekK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TR1-9n-wOt" userLabel="CameraView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISN-V9-aws">
+                                        <rect key="frame" x="165.5" y="771" width="83" height="83"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ISN-V9-aws" secondAttribute="height" id="hJC-9Y-ZRK"/>
+                                        </constraints>
+                                        <state key="normal" image="camera"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8862745098" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ISN-V9-aws" firstAttribute="width" secondItem="TR1-9n-wOt" secondAttribute="width" multiplier="1/5" id="5b8-W5-oua"/>
+                                    <constraint firstItem="ISN-V9-aws" firstAttribute="bottom" secondItem="TR1-9n-wOt" secondAttribute="bottom" constant="-8" id="QTq-1j-h3S"/>
+                                    <constraint firstItem="ISN-V9-aws" firstAttribute="centerX" secondItem="TR1-9n-wOt" secondAttribute="centerX" id="f0j-j1-c01"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvZ-7z-Gce">
+                                <rect key="frame" x="16" y="32" width="93" height="30"/>
+                                <state key="normal" title="This is cancel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AvZ-7z-Gce" firstAttribute="top" secondItem="TR1-9n-wOt" secondAttribute="top" constant="32" id="5nk-8L-tik"/>
+                            <constraint firstItem="eAC-vB-SOy" firstAttribute="bottom" secondItem="TR1-9n-wOt" secondAttribute="bottom" id="ag0-fo-cx0"/>
+                            <constraint firstItem="eAC-vB-SOy" firstAttribute="trailing" secondItem="TR1-9n-wOt" secondAttribute="trailing" id="myE-XM-1yd"/>
+                            <constraint firstItem="TR1-9n-wOt" firstAttribute="top" secondItem="XOf-VB-ekK" secondAttribute="top" id="qMh-HO-zcp"/>
+                            <constraint firstItem="TR1-9n-wOt" firstAttribute="leading" secondItem="eAC-vB-SOy" secondAttribute="leading" id="qwi-gy-xnM"/>
+                            <constraint firstItem="AvZ-7z-Gce" firstAttribute="leading" secondItem="TR1-9n-wOt" secondAttribute="leading" constant="16" id="r4W-p1-Ty2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eAC-vB-SOy"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraView" destination="TR1-9n-wOt" id="2Yy-Wb-Hsx"/>
+                        <outlet property="cancleButton" destination="AvZ-7z-Gce" id="d8n-Vx-gh7"/>
+                        <outlet property="snapPhotoButton" destination="ISN-V9-aws" id="yfQ-08-fdR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGv-TI-9Zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="141"/>
+            <point key="canvasLocation" x="24.637681159420293" y="140.625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="30" height="30"/>
+    </resources>
 </document>

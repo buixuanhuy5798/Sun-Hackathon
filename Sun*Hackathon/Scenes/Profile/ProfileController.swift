@@ -7,6 +7,12 @@
 //
 
 class ProfileController: UIViewController {
+    
+    @IBOutlet weak var avatarImageView: UIImageView!
+    
+    override func viewDidLayoutSubviews() {
+        avatarImageView.toRoundImage()
+    }
 }
 
 extension ProfileController: StoryboardSceneBased {
