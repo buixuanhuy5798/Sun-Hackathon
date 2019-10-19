@@ -8,6 +8,7 @@
 
 protocol CameraUseCaseType {
     func detectImage(image: UIImage) -> Observable<[TypeTrash]>
+    func convertToText(trashType: [TypeTrash]) -> String
 }
 
 struct CameraUseCase: CameraUseCaseType {
@@ -16,5 +17,17 @@ struct CameraUseCase: CameraUseCaseType {
     
     func detectImage(image: UIImage) -> Observable<[TypeTrash]> {
         return detectRepo.detectTrash(image: image)
+    }
+    
+    func convertToText(trashType: [TypeTrash]) -> String {
+        let max = trashType.sorted(by: { $0.score > $1.score })[0]
+        if max.score > 0.9 {
+            return "Đây là rác: " + max.getNameVi()
+        } else if max.score < 0.9 && max.score >= 0.5 {
+            return "Đây có thể là rác: " + max.getNameVi()
+        } else {
+            return "Chưa thể xác định được. Vui lòng thử lại"
+        }
+        
     }
 }

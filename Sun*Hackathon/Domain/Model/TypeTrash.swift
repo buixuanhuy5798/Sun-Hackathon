@@ -21,3 +21,18 @@ extension TypeTrash: Mappable {
         score <- map["score"]
     }
 }
+
+extension TypeTrash {
+    func getNameVi() -> String {
+        switch className {
+        case "Compost":
+            return "Hữu cơ"
+        case "Landfill":
+            return "Vô cơ"
+        case "Recycle":
+            return "Có thể tái chế"
+        default:
+            return ""
+        }
+    }
+}
